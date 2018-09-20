@@ -1,0 +1,21 @@
+{
+
+    "model_dir": "ckpt/",
+    "label_path": "kinetics_400.txt",
+    "pretrain_ckpt_path": "i3d_ckpt/model.ckpt",
+    "dropout_keep_prob": 0.5,
+    "net": "eco",
+
+    "weight_decay": 5e-4,
+
+    "lr_boundaries": [80000, 100000],
+    "lr_values": [0.001, 0.0001, 0.00001],
+
+    "image_size": [224, 224],
+    "batch_size": 5,
+    "time_step": 16,
+    "train_dataset": "/home/ubuntu/disk_e/kinetics400_shards/train",
+    "val_dataset": "/home/ubuntu/disk_e/kinetics400_shards/val",
+    "num_steps": 120000
+
+}
